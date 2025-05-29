@@ -1,7 +1,3 @@
-* {
-    background-color: wheat;
-}
-
 .font {
     color: black;
     /*Colore o texto*/
@@ -33,7 +29,44 @@
 .center {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
 
+.position {
+    position: absolute;
+    /*Posiciona de forma absoluta um elemento*/
+    right: 100px;
+    /*Distancia a partir de uma direção*/
+}
 
+.fundo {
+    background-color: rgb(168, 207, 241);
+    /*Cor de Fundo*/
+}
 
+.fundoImagem {
+    background-image: url(img/urss.jpeg);
+    background-repeat: no-repeat;
+    /*Diz que a imagem nao vai repetir*/
+
+    /*background-size: cover;*/
+    background-size: cover;
+    /*Define o tamanho da imagem*/
+    /*background-position: center;*/
+    /*Define a posição da imagem*/
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.sombra {
+    box-shadow: 4px 4px 4px 4px black;
+}
+
+.scroll {
+    overflow: auto;
+    /*Scroll vertical*/
+    overflow-x: scroll;
+    /*Scroll horizontal*/
 }
