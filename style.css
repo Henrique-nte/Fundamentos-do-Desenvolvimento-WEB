@@ -1,7 +1,39 @@
 * {
-    background-color: aqua;
+    background-color: wheat;
 }
 
-h1 {
-    color: blueviolet;
+.font {
+    color: black;
+    /*Colore o texto*/
+    font-size: 40px;
+    /*Muda o tamanho do texto*/
+    font-family: sans-serif;
+    /* Muda a fonte do texto*/
+    font-weight: 900;
+    /*Controle do negrito do texto*/
+    text-align: center;
+    /*Alinha o texto horizontalmente */
+    text-decoration: underline;
+    /*Sublinhado*/
+}
+
+.box {
+    width: 20vw;
+    /*Largura*/
+    height: 100px;
+    /*Altura*/
+    margin: 8px 5px 15px 4px;
+    /*Margem*/
+    padding: 4px 15px 5px 8px;
+    /*Margem*/
+    border: black 1px solid;
+    /**/
+}
+
+.center {
+    display: flex;
+    align-items: center;
+
+
+
 }
