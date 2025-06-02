@@ -1,0 +1,183 @@
+* {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.card {
+    background-color: antiquewhite;
+    border-radius: 25px;
+}
+
+
+
+.title h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+i {
+    color: red;
+    /* Cor do fogo */
+    font-size: 36px;
+    /* Tamanho do ícone */
+    margin-left: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+nav a {
+    font-size: 25px;
+    background-color: #b9b9b9;
+    border-radius: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff8d8d;
+}
+
+
+.container-pratos {
+    /* 1. Define o contêiner como Flexbox */
+    display: flex;
+
+    /* 2. Permite que os itens quebrem para a próxima linha */
+    flex-wrap: wrap;
+    /* Muito importante para evitar que os pratos fiquem espremidos em telas pequenas */
+
+    /* 3. Centraliza os itens no contêiner (horizontalmente) */
+    justify-content: center;
+    /* Opções: flex-start, flex-end, center, space-between, space-around, space-evenly */
+
+    /* 4. Alinha os itens ao longo do eixo cruzado (verticalmente, se houver quebra de linha) */
+    align-items: flex-start;
+    /* Opções: flex-start, flex-end, center, stretch, baseline */
+
+    /* 5. Espaçamento entre as linhas de itens */
+    gap: 20px;
+    /* Um atalho para row-gap e column-gap, adiciona espaço entre os itens */
+
+    max-width: 1200px;
+    /* Largura máxima para o contêiner */
+    margin: 0 auto;
+    /* Centraliza o contêiner na página */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.prato {
+    /* Estilos básicos para cada item/prato */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    flex: 1 1 calc(25% - 20px);
+    /* Regra flexível para cada item (veja explicação abaixo) */
+    min-width: 250px;
+    /* Largura mínima para o prato, ajuda na responsividade */
+    box-sizing: border-box;
+    /* Garante que padding e border sejam incluídos na largura */
+    display: flex;
+    /* Flexbox para o conteúdo interno do prato (título, img, etc.) */
+    flex-direction: column;
+    /* Coloca os itens internos em coluna */
+    justify-content: space-between;
+    /* Distribui o espaço entre os itens internos */
+    align-items: center;
+    /* Centraliza itens internos horizontalmente */
+}
+
+.prato img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.prato h3 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.prato p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    /* Permite que o parágrafo ocupe o espaço extra */
+}
+
+.prato button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.prato button:hover {
+    background-color: #218838;
+}
+
+.sobre h1 {
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+tfoot,
+td {
+    font-style: italic;
+    text-align: left;
+    padding-top: 1rem;
+    color: #555;
+}
+
+a {
+    color: #1370ae;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
