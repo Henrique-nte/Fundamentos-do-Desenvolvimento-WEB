@@ -51,29 +51,13 @@ nav a:hover {
 
 
 .container-pratos {
-    /* 1. Define o contêiner como Flexbox */
     display: flex;
-
-    /* 2. Permite que os itens quebrem para a próxima linha */
     flex-wrap: wrap;
-    /* Muito importante para evitar que os pratos fiquem espremidos em telas pequenas */
-
-    /* 3. Centraliza os itens no contêiner (horizontalmente) */
     justify-content: center;
-    /* Opções: flex-start, flex-end, center, space-between, space-around, space-evenly */
-
-    /* 4. Alinha os itens ao longo do eixo cruzado (verticalmente, se houver quebra de linha) */
     align-items: flex-start;
-    /* Opções: flex-start, flex-end, center, stretch, baseline */
-
-    /* 5. Espaçamento entre as linhas de itens */
     gap: 20px;
-    /* Um atalho para row-gap e column-gap, adiciona espaço entre os itens */
-
     max-width: 1200px;
-    /* Largura máxima para o contêiner */
     margin: 0 auto;
-    /* Centraliza o contêiner na página */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -81,7 +65,6 @@ nav a:hover {
 }
 
 .prato {
-    /* Estilos básicos para cada item/prato */
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -89,19 +72,12 @@ nav a:hover {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     flex: 1 1 calc(25% - 20px);
-    /* Regra flexível para cada item (veja explicação abaixo) */
     min-width: 250px;
-    /* Largura mínima para o prato, ajuda na responsividade */
     box-sizing: border-box;
-    /* Garante que padding e border sejam incluídos na largura */
     display: flex;
-    /* Flexbox para o conteúdo interno do prato (título, img, etc.) */
     flex-direction: column;
-    /* Coloca os itens internos em coluna */
     justify-content: space-between;
-    /* Distribui o espaço entre os itens internos */
     align-items: center;
-    /* Centraliza itens internos horizontalmente */
 }
 
 .prato img {
@@ -120,11 +96,11 @@ nav a:hover {
 
 .prato p {
     color: #666;
-    font-size: 15px;
+    font-size: 27px;
+    font-weight: 50px;
     line-height: 1.4;
     margin-bottom: 15px;
     flex-grow: 1;
-    /* Permite que o parágrafo ocupe o espaço extra */
 }
 
 .prato button {
