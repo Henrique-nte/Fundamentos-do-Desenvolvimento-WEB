@@ -129,7 +129,7 @@ table {
 table,
 th,
 td {
-    border: 1px solid #ccc;
+    border: 2px solid #0c0b0b;
 }
 
 th,
@@ -143,7 +143,7 @@ td {
     font-style: italic;
     text-align: left;
     padding-top: 1rem;
-    color: #555;
+    color: #000000;
 }
 
 a {
